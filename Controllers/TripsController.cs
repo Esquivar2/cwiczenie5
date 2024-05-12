@@ -22,3 +22,5 @@ namespace Zadanie7.Controllers
     }
 }
 
+//catch excpetion
+//return nocontent
