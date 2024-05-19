@@ -1,4 +1,6 @@
-﻿namespace Zadanie7.Models.DTOs
+﻿using System.Collections.Generic;
+
+namespace Zadanie7.Models.DTOs
 {
     public class TripDTO
     {
@@ -7,7 +9,8 @@
         public DateTime DateFrom { get; set; }
         public DateTime DateTo { get; set; }
         public int MaxPeople { get; set; }
-        public int Countries { get; set; }
+        public IEnumerable<CountryDTO> Countries { get; set; } = new List<CountryDTO>();
+        public IEnumerable<ClientDTO> Clients { get; set; } = new List<ClientDTO>();
 
     }
 }

@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Zadanie7.Models;
 
-public partial class MasterContext : DbContext
+public partial class S26294Context : DbContext
 {
-    public MasterContext()
+    public S26294Context()
     {
     }
 
-    public MasterContext(DbContextOptions<MasterContext> options)
+    public S26294Context(DbContextOptions<S26294Context> options)
         : base(options)
     {
     }
@@ -25,7 +25,7 @@ public partial class MasterContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;TrustServerCertificate=true");
+        => optionsBuilder.UseSqlServer("Data Source=(localdb)\\Local;Initial Catalog=s26294;Integrated Security=True;TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
